@@ -6,12 +6,30 @@
 
 body{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 50px;
     min-height: 100vh;
+    max-height: 100vh;
     /* background: #091e29; */
-    background-color: #091921;
+    /* background-color: rgb(57, 56, 55); */
+    background-color: #35363a;
 }
+
+.heading{
+    color: #777777;
+}
+
+#vol{
+    width: 45px;
+    cursor: pointer;
+}
+#mut{
+    width: 45px;
+    cursor: pointer;
+}
+
 
 .clock{
     height: 350px;
@@ -20,6 +38,7 @@ body{
     align-items: center;
     justify-content: center;
     background: url(./img/clock.png);
+    background-color: #091921;
     background-size: contain;
     border: 4px solid #091921;
     border-radius: 50%;
@@ -91,4 +110,30 @@ body{
     background-color: #fff;
     z-index: 12;
     border-radius: 6px 6px 0 0;
+}
+
+.volume {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    background-size: cover;
+    background-image: url('./img/high-volume.png');
+}
+
+.volume-off {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    background-size: cover;
+    background-image: url('./img/mute.png');
+}
+
+#btn{
+    background-color: #091921;
+    padding: 5px 10px 5px 10px;
+    border: 2px solid rgb(220, 220, 220);
+    border-radius: 15px;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
 }
